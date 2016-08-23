@@ -1,9 +1,19 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+nav {
+  backgroud-color:#595959
+  font-color: #fcff4b
+}
+
 h1 {
-  color: blue;
+  color: #f5c400;
   font-size: 30px;
   display: inline-block;
-  float:left;
+  float:center;
 }
+
 .craig {
   float:left;
   display: inline-block;

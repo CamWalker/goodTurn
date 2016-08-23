@@ -1,0 +1,30 @@
+@import 'https://fonts.googleapis.com/css?family=Lato';
+
+// colors
+$bright: #fcff4b;
+$orange: #f5c400;
+$green: #91c499;
+$dark-green: #808f85;
+$grey: #595959;
+
+//Font Family
+$font: 'Lato', sans-serif;
+
+body {
+  font-family: $font;
+  background-color: #edefed;
+}
+
+/*--------------------------Nav Bar---------------------------*/
+.navBar {
+  background-color: $grey;
+  color: $bright;
+}
+
+/*--------------------------Landing Page---------------------------*/
+//title
+.title {
+  color: $orange;
+  font-size: 5vh;
+  text-align: center;
+}

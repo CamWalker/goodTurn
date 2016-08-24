@@ -1,30 +1,98 @@
 @import 'https://fonts.googleapis.com/css?family=Lato';
 
 // colors
-$bright: #fcff4b;
+$yellow: #fcff4b;
 $orange: #f5c400;
 $green: #91c499;
 $dark-green: #808f85;
 $grey: #595959;
+$white: #fff;
 
 //Font Family
 $font: 'Lato', sans-serif;
+
+//border
+$border-left: 1px solid #dce0e0;
 
 body {
   font-family: $font;
   background-color: #edefed;
 }
 
+a {
+  text-decoration: none;
+  -moz-transition:  0.3s ease-in-out;
+    -webkit-transition:  0.3s ease-in-out;
+    -o-transition:  0.3s ease-in-out;
+    -ms-transition:  0.3s ease-in-out;
+    transition:  0.3s ease-in-out;
+}
 /*--------------------------Nav Bar---------------------------*/
-.navBar {
-  background-color: $grey;
-  color: $bright;
+#nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  background-color: $white;
+  height: 10vh;
+  width: 100vw;
+
+  #navBar {
+    align-items: center;
+    .nav-logo {
+
+      border-left: $border-left;
+
+      .logo {
+        color: $green;
+        font-size: 6vh;
+        font-weight: bold;
+        font-family: $font;
+        text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+      }
+    }
+    .navItems {
+      justify-content: space-around;
+      .nav-links {
+        color: $grey;
+      }
+      .nav-links:hover {
+        color: $orange;
+      }
+    }
+  }
 }
 
+
+
 /*--------------------------Landing Page---------------------------*/
-//title
-.title {
-  color: $orange;
-  font-size: 5vh;
-  text-align: center;
+.heading {
+  color: $white;
+
+  #heading-pic {
+    background-image: url(./../img/road.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .heading-align {
+      text-align: center;
+      font-weight: 700;
+      height: 65vh;
+      .heading-title {
+        font-size: 6vh;
+        text-transform: uppercase;
+      }
+      .heading-descr {
+        font-size: 3vh;
+      }
+    }
+  }
+
+
 }

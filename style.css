@@ -1,20 +1,32 @@
 body {
   font-family: 'Lato', sans-serif;
 }
-
-nav {
-  backgroud-color:#595959
-  font-color: #fcff4b
+li {
+  display: inline;
+  padding-right: 50px;
 }
+.navBar {
+  background-color:#595959;
 
+  padding: 8px;
+
+}
+.logo {
+  color: #91c499;
+  font-size: 30px;
+  font-weight: 600;
+  display: inline;
+}
+.navItems {
+  color: #fcff4b;
+  float: right;
+  display: inline;
+  font-weight: 600;
+  font-size: 14px;
+}
 h1 {
   color: #f5c400;
   font-size: 30px;
   display: inline-block;
   float:center;
-}
-
-.craig {
-  float:left;
-  display: inline-block;
 }

@@ -102,7 +102,6 @@ a {
 a:active,
 a:hover {
     outline-width: 0;
-    color: #fcff4b
 }
 
 /* Text-level semantics
@@ -161,7 +160,6 @@ h1 {
  */
 
 mark {
-    background-color: #ff0;
     color: #000;
 }
 

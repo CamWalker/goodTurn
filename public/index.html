@@ -2,22 +2,23 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Good Turn</title>
 
     <link rel="icon" href="./img/favTree.ico" type="image/x-icon">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/style.css">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 
   </head>
   <body>
-    <header id="nav">
-      <nav id="navBar">
+    <header id="nav-container">
+      <nav id="nav-bar">
         <div class="nav-logo">
           <a href="#"><h1 class="logo">GT</h1></a>
         </div>
+        <i class="fa fa-bars fa-2x" id="hamburger" aria-hidden="true"></i>
         <div class="nav-links">
           <a class="nav-items" href="#">About</a>
         </div>
@@ -30,8 +31,15 @@
         <div class="nav-links">
           <a class="nav-items" href="#">Log In</a>
         </div>
-
       </nav>
+      <div class="nav-mobile">
+        <ul>
+          <li><a class="nav-links-mobile" href="#">About</a></li>
+          <li><a class="nav-links-mobile" href="#">Help</a></li>
+          <li><a class="nav-links-mobile" href="#">Sign Up</a></li>
+          <li><a class="nav-links-mobile" href="#">Login</a></li>
+        </ul>
+      </div>
     </header>
 
     <main>
@@ -52,6 +60,7 @@
       </section>
 
     </main>
-
+    <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+    <script src="./js/animations.js" charset="utf-8"></script>
   </body>
 </html>

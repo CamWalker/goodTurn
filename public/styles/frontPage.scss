@@ -1,0 +1,154 @@
+@import 'https://fonts.googleapis.com/css?family=Lato';
+
+
+// colors
+$bright: #f9e52a;
+$yellow: #fcff4b;
+$orange: #f5c400;
+$tree-green: #22b222;
+$neon-green: #90e54b;
+$green: #91c499;
+$green-grey: #808f85;
+$grey: #595959;
+$static: #283d3b;
+$light-grey: #dce0e0;
+$white: #fff;
+
+//Font Family
+$font: 'Lato', sans-serif;
+
+//border
+$border-line: 1px solid $light-grey;
+
+body {
+  font-family: $font;
+  background-color: #edefed;
+}
+
+a {
+  text-decoration: none;
+  -moz-transition:  0.3s ease-in-out;
+    -webkit-transition:  0.3s ease-in-out;
+    -o-transition:  0.3s ease-in-out;
+    -ms-transition:  0.3s ease-in-out;
+    transition:  0.3s ease-in-out;
+}
+
+/*--------------------------Nav Bar---------------------------*/
+#nav-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  background-color: $white;
+  height: 10vh;
+  width: 100vw;
+
+  #nav-bar {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .nav-logo {
+      margin-right:auto;
+      padding: 0px 4vw;
+      border-right: $border-line;
+
+      .logo {
+        display: block;
+        line-height: 6vh;
+        color: $orange;
+        font-size: 6vh;
+        font-weight: bold;
+        font-family: $font;
+        text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+      }
+      .logo:hover {
+        color: $green;
+      }
+    }
+    .nav-logo:hover {
+      background: #f5f5f5;
+      cursor: pointer;
+    }
+      .nav-links {
+        border-left: $border-line;
+        padding: 0px 3vw;
+        color: $grey;
+        height: 10vh;
+
+        .nav-items {
+          color: $green-grey;
+          display: block;
+          line-height: 10vh;
+        }
+      }
+      .nav-links:hover {
+        background: #f5f5f5;
+        cursor: pointer;
+      }
+
+  }
+}
+#hamburger {
+  color: #000;
+  margin-right: 4vh;
+}
+
+
+.nav-mobile {
+  background-color: #fff;
+  display: none;
+  float: right;
+  width: 42vw;
+  text-align: center;
+
+  ul {
+
+      li {
+        height: 50px;
+        padding-top: 15px;
+        border: $border-line;
+        color: #000;
+        font-size: 15px;
+        font-weight: 400;
+        font-family: 'Open Sans', sans-serif;
+        text-transform: uppercase;
+      }
+      li:hover {
+        background-color: #f5f5f5;
+      }
+  }
+}
+
+
+/*--------------------------Landing Page---------------------------*/
+.heading {
+  color: $white;
+
+  #heading-pic {
+    background-image: url(./../img/road.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .heading-align {
+      text-align: center;
+      font-weight: 700;
+      height: 65vh;
+      .heading-title {
+        font-size: 6vh;
+        text-transform: uppercase;
+      }
+      .heading-descr {
+        font-size: 3vh;
+      }
+    }
+  }
+
+
+}
